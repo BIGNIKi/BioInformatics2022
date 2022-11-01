@@ -1,0 +1,8 @@
+[M::main::0.069*1.01] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.081*1.01] mid_occ = 12
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.091*1.01] distinct minimizers: 838542 (98.18% are singletons); average occurrences: 1.034; average spacing: 5.352; total length: 4641652
+[M::worker_pipeline::58.639*5.98] mapped 33133 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t 8 -a /home/bignik/Documents/GitHub/BioInformatics2022/Part3/../Part3/out/ref.mmi /home/bignik/Documents/GitHub/BioInformatics2022/Part3/../Part3/inputFiles/SRR_e_coli_fastq.gz
+[M::main] Real time: 58.650 sec; CPU: 350.585 sec; Peak RSS: 0.337 GB

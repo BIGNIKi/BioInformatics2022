@@ -1,1 +1,1 @@
-2022-11-01 18:21:06	2.7s	stupefied_thompson	OK	eccb43385196279b45102518959b79d1	8cb09e4a-0a82-4441-96d5-7f1d6aff63fb	nextflow run tutorial.nf
+2022-11-01 20:52:40	1m 2s	backstabbing_nobel	OK	0933b93fcb8618c3a58e7b1c88f35359	edcba1f0-d5ee-457e-a10b-9843745be468	nextflow run tutorial.nf -resume
