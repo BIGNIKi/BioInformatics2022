@@ -41,3 +41,19 @@ curl -s https://get.nextflow.io | bash
 а) не указан процесс отработки fastqc процесса, с созданием .html файла, хотя fastqc успешно отрабатывает и создает отчет  
 б) входные файлы на схеме не помечаются  
 в) условный оператор на проверку процента и последующее ветвление отображается как отдельный процесс "parsePercent"  
+
+Вывод в `stdout` после полной отработки пайплайна:
+```
+N E X T F L O W  ~  version 22.10.1
+WARN: It appears you have never run this project before -- Option `-resume` is ignored
+Launching `tutorial.nf` [hopeful_lichterman] DSL2 - revision: 5837aed161
+executor >  local (5)
+[77/27f572] process > index            [100%] 1 of 1 ✔
+[bc/21489c] process > FastQC           [100%] 1 of 1 ✔
+[19/32710e] process > minimap2         [100%] 1 of 1 ✔
+[92/629676] process > samtoolsFlagstat [100%] 1 of 1 ✔
+[9d/3a3cb8] process > parsePercent     [100%] 1 of 1 ✔
+OK
+
+
+```
