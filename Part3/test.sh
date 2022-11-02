@@ -8,6 +8,7 @@
 /home/bignik/Documents/GitHub/BioInformatics2022/Part2/nextflow run tutorial.nf -resume
 
 # также можно передавать параметры через --paramName "sampleText"
-# можно задать default значение для параметра params.paramName = 'Hello world!'
+# можно задать значение для параметра params.paramName = 'Hello world!'
 
-# Channel - FIFO queue
+# то же самое, но с визуализацией работы пайплайна
+/home/bignik/Documents/GitHub/BioInformatics2022/Part2/nextflow run -resume tutorial.nf -with-dag diagram.png

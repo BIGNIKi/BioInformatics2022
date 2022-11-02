@@ -1,1 +1,1 @@
-2022-11-01 20:52:40	1m 2s	backstabbing_nobel	OK	0933b93fcb8618c3a58e7b1c88f35359	edcba1f0-d5ee-457e-a10b-9843745be468	nextflow run tutorial.nf -resume
+2022-11-03 00:24:31	1m 1s	hopeful_lichterman	OK	5837aed1616422caabfe3c1dc13196dd	eb388bfc-f3fc-405d-9246-d2007d41e249	nextflow run -resume tutorial.nf -with-dag diagram.png

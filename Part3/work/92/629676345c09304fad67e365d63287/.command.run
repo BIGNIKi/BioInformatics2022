@@ -1,5 +1,5 @@
 #!/bin/bash
-# NEXTFLOW TASK: parsePercent
+# NEXTFLOW TASK: samtoolsFlagstat
 set -e
 set -u
 NXF_DEBUG=${NXF_DEBUG:=0}; [[ $NXF_DEBUG > 1 ]] && set -x
@@ -70,7 +70,7 @@ nxf_fs_rsync() {
 
 on_exit() {
     exit_status=${nxf_main_ret:=$?}
-    printf $exit_status > /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/c8/6a4374c85e7f8860bdb9fb962da881/.exitcode
+    printf $exit_status > /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/92/629676345c09304fad67e365d63287/.exitcode
     set +u
     [[ "$tee1" ]] && kill $tee1 2>/dev/null
     [[ "$tee2" ]] && kill $tee2 2>/dev/null
@@ -84,14 +84,14 @@ on_term() {
 }
 
 nxf_launch() {
-    /bin/bash -ue /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/c8/6a4374c85e7f8860bdb9fb962da881/.command.sh
+    /bin/bash -ue /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/92/629676345c09304fad67e365d63287/.command.sh
 }
 
 nxf_stage() {
     true
     # stage input files
-    rm -f flagstat_result.txt
-    ln -s /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/4c/40730b59082e8787e6d0f57dce7d1d/flagstat_result.txt flagstat_result.txt
+    rm -f minimap_sam_result.sam
+    ln -s /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/19/32710e52911593c6d0e5f7a039a2d4/minimap_sam_result.sam minimap_sam_result.sam
 }
 
 nxf_unstage() {
@@ -107,7 +107,7 @@ nxf_main() {
     [[ "${NXF_CHDIR:-}" ]] && cd "$NXF_CHDIR"
     NXF_SCRATCH=''
     [[ $NXF_DEBUG > 0 ]] && nxf_env
-    touch /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/c8/6a4374c85e7f8860bdb9fb962da881/.command.begin
+    touch /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/92/629676345c09304fad67e365d63287/.command.begin
     set +u
     set -u
     [[ $NXF_SCRATCH ]] && cd $NXF_SCRATCH

@@ -1,5 +1,5 @@
 #!/bin/bash
-# NEXTFLOW TASK: runBWAAlgos
+# NEXTFLOW TASK: minimap2
 set -e
 set -u
 NXF_DEBUG=${NXF_DEBUG:=0}; [[ $NXF_DEBUG > 1 ]] && set -x
@@ -70,7 +70,7 @@ nxf_fs_rsync() {
 
 on_exit() {
     exit_status=${nxf_main_ret:=$?}
-    printf $exit_status > /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/be/a12a2273c5a7656a837cc03f84ee86/.exitcode
+    printf $exit_status > /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/19/32710e52911593c6d0e5f7a039a2d4/.exitcode
     set +u
     [[ "$tee1" ]] && kill $tee1 2>/dev/null
     [[ "$tee2" ]] && kill $tee2 2>/dev/null
@@ -84,11 +84,14 @@ on_term() {
 }
 
 nxf_launch() {
-    /bin/bash -ue /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/be/a12a2273c5a7656a837cc03f84ee86/.command.sh
+    /bin/bash -ue /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/19/32710e52911593c6d0e5f7a039a2d4/.command.sh
 }
 
 nxf_stage() {
     true
+    # stage input files
+    rm -f ref.mmi
+    ln -s /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/77/27f572febe4a631e8bb3595353dc7b/ref.mmi ref.mmi
 }
 
 nxf_unstage() {
@@ -104,7 +107,7 @@ nxf_main() {
     [[ "${NXF_CHDIR:-}" ]] && cd "$NXF_CHDIR"
     NXF_SCRATCH=''
     [[ $NXF_DEBUG > 0 ]] && nxf_env
-    touch /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/be/a12a2273c5a7656a837cc03f84ee86/.command.begin
+    touch /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/19/32710e52911593c6d0e5f7a039a2d4/.command.begin
     set +u
     set -u
     [[ $NXF_SCRATCH ]] && cd $NXF_SCRATCH

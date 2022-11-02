@@ -6,7 +6,7 @@ params.inputDir = "$baseDir/../Part3/inputFiles"
 params.threadsCount = 8
 params.parsePyScript = "test1.py"
 
-process minimap2Index {
+process index {
     publishDir "${params.outDir}", mode: 'copy'
 
     output:
@@ -18,27 +18,33 @@ process minimap2Index {
     """ 
 }
 
-process fastqGo {
+process FastQC {
+    publishDir "${params.outDir}", mode: 'copy'
+
     script:
     """
+    mkdir -p ${params.outDir}
     fastqc "${params.inputDir}/${params.actualReadesFromEColiWithoutFormat}.gz" -o ${params.outDir}
     rm "${params.outDir}/${params.actualReadesFromEColiWithoutFormat}_fastqc.zip"
     """
 }
 
-process runBWAAlgos {
+process minimap2 {
     publishDir "${params.outDir}", mode: 'copy'
+
+    input:
+      path mmiFile
 
     output:
       path "*.sam", emit: samchanski
 
     script:
     """
-    minimap2 -t ${params.threadsCount} -a ${params.outDir}/ref.mmi ${params.inputDir}/${params.actualReadesFromEColiWithoutFormat}.gz > minimap_sam_result.sam
+    minimap2 -t ${params.threadsCount} -a $mmiFile ${params.inputDir}/${params.actualReadesFromEColiWithoutFormat}.gz > minimap_sam_result.sam
     """
 }
 
-process flagstatAnylysis {
+process samtoolsFlagstat {
     publishDir "${params.outDir}", mode: 'copy'
 
     input:
@@ -69,9 +75,9 @@ process parsePercent {
 }
 
 workflow {
-  minimap2Index()
-  fastqGo()
-  runBWAAlgos()
-  flagstatAnylysis(runBWAAlgos.out.samchanski)
-  parsePercent(flagstatAnylysis.out.resultTxt) | view
+  index()
+  FastQC()
+  minimap2(index.out.refMmi)
+  samtoolsFlagstat(minimap2.out.samchanski)
+  parsePercent(samtoolsFlagstat.out.resultTxt) | view
 }

@@ -1,0 +1,8 @@
+[M::mm_idx_gen::0.199*1.00] collected minimizers
+[M::mm_idx_gen::0.247*1.19] sorted minimizers
+[M::main::0.303*1.16] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.317*1.15] distinct minimizers: 838542 (98.18% are singletons); average occurrences: 1.034; average spacing: 5.352; total length: 4641652
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d ref.mmi /home/bignik/Documents/GitHub/BioInformatics2022/Part3/../Part3/inputFiles/RefGenome_e_coli.fna.gz
+[M::main] Real time: 0.328 sec; CPU: 0.375 sec; Peak RSS: 0.046 GB

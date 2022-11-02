@@ -1,78 +1,78 @@
-Nov-01 20:52:40.497 [main] DEBUG nextflow.cli.Launcher - $> nextflow run tutorial.nf -resume
-Nov-01 20:52:40.577 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.1
-Nov-01 20:52:40.613 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bignik/.nextflow/plugins; core-plugins: nf-amazon@1.11.0,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.4,nf-tower@1.5.5,nf-wave@0.5.2
-Nov-01 20:52:40.629 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Nov-01 20:52:40.630 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Nov-01 20:52:40.635 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Nov-01 20:52:40.645 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Nov-01 20:52:40.704 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
-Nov-01 20:52:40.726 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Nov-01 20:52:40.746 [main] INFO  nextflow.cli.CmdRun - Launching `tutorial.nf` [backstabbing_nobel] DSL2 - revision: 0933b93fcb
-Nov-01 20:52:40.747 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Nov-01 20:52:40.747 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Nov-01 20:52:40.757 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/bignik/.nextflow/secrets/store.json
-Nov-01 20:52:40.761 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@64e1dd11] - activable => nextflow.secret.LocalSecretsProvider@64e1dd11
-Nov-01 20:52:40.834 [main] DEBUG nextflow.Session - Session UUID: edcba1f0-d5ee-457e-a10b-9843745be468
-Nov-01 20:52:40.834 [main] DEBUG nextflow.Session - Run name: backstabbing_nobel
-Nov-01 20:52:40.835 [main] DEBUG nextflow.Session - Executor pool size: 8
-Nov-01 20:52:40.847 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Nov-01 20:52:40.879 [main] DEBUG nextflow.cli.CmdRun - 
+Nov-03 00:24:30.930 [main] DEBUG nextflow.cli.Launcher - $> nextflow run -resume tutorial.nf -with-dag diagram.png
+Nov-03 00:24:30.986 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.1
+Nov-03 00:24:31.009 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bignik/.nextflow/plugins; core-plugins: nf-amazon@1.11.0,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.4,nf-tower@1.5.5,nf-wave@0.5.2
+Nov-03 00:24:31.021 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-03 00:24:31.022 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-03 00:24:31.025 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Nov-03 00:24:31.040 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-03 00:24:31.115 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Nov-03 00:24:31.149 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Nov-03 00:24:31.178 [main] INFO  nextflow.cli.CmdRun - Launching `tutorial.nf` [hopeful_lichterman] DSL2 - revision: 5837aed161
+Nov-03 00:24:31.179 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-03 00:24:31.179 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-03 00:24:31.194 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/bignik/.nextflow/secrets/store.json
+Nov-03 00:24:31.202 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@585ac855] - activable => nextflow.secret.LocalSecretsProvider@585ac855
+Nov-03 00:24:31.307 [main] DEBUG nextflow.Session - Session UUID: eb388bfc-f3fc-405d-9246-d2007d41e249
+Nov-03 00:24:31.307 [main] DEBUG nextflow.Session - Run name: hopeful_lichterman
+Nov-03 00:24:31.307 [main] DEBUG nextflow.Session - Executor pool size: 8
+Nov-03 00:24:31.326 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-03 00:24:31.370 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 22.10.1 build 5828
   Created: 27-10-2022 16:58 UTC (23:58 NOVST)
   System: Linux 5.15.0-52-generic
   Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu122.04
   Encoding: UTF-8 (UTF-8)
-  Process: 14827@bignik-X550JK [127.0.1.1]
-  CPUs: 8 - Mem: 7.6 GB (1.4 GB) - Swap: 2 GB (2 GB)
-Nov-01 20:52:40.904 [main] DEBUG nextflow.Session - Work-dir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work [ext2/ext3]
-Nov-01 20:52:40.905 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/bin
-Nov-01 20:52:40.914 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Nov-01 20:52:40.926 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Nov-01 20:52:40.947 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Nov-01 20:52:40.958 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Nov-01 20:52:41.146 [main] DEBUG nextflow.Session - Session start
-Nov-01 20:52:42.128 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Nov-01 20:52:42.238 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-01 20:52:42.239 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-01 20:52:42.246 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Nov-01 20:52:42.254 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=7.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Nov-01 20:52:42.400 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-01 20:52:42.400 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-01 20:52:42.410 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-01 20:52:42.410 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-01 20:52:42.429 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-01 20:52:42.429 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-01 20:52:42.440 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-01 20:52:42.440 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-01 20:52:42.487 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: minimap2Index, fastqGo, runBWAAlgos, flagstatAnylysis, parsePercent
-Nov-01 20:52:42.488 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
-Nov-01 20:52:42.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap2Index
-Nov-01 20:52:42.490 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqGo
-Nov-01 20:52:42.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runBWAAlgos
-Nov-01 20:52:42.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > flagstatAnylysis
-Nov-01 20:52:42.493 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > parsePercent
-Nov-01 20:52:42.493 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Nov-01 20:52:42.496 [main] DEBUG nextflow.Session - Session await
-Nov-01 20:52:42.746 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-01 20:52:42.749 [Task submitter] INFO  nextflow.Session - [0a/772d9e] Submitted process > minimap2Index
-Nov-01 20:52:42.759 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-01 20:52:42.759 [Task submitter] INFO  nextflow.Session - [be/a12a22] Submitted process > runBWAAlgos
-Nov-01 20:52:42.765 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-01 20:52:42.766 [Task submitter] INFO  nextflow.Session - [40/1c07ee] Submitted process > fastqGo
-Nov-01 20:52:43.129 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: minimap2Index; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/0a/772d9e945c1b64c200e67c137f4360]
-Nov-01 20:52:43.203 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Nov-01 20:52:53.084 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: fastqGo; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/40/1c07ee25ea10b822610762e9a41d70]
-Nov-01 20:53:41.432 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: runBWAAlgos; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/be/a12a2273c5a7656a837cc03f84ee86]
-Nov-01 20:53:41.484 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-01 20:53:41.485 [Task submitter] INFO  nextflow.Session - [4c/40730b] Submitted process > flagstatAnylysis
-Nov-01 20:53:42.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: flagstatAnylysis; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/4c/40730b59082e8787e6d0f57dce7d1d]
-Nov-01 20:53:42.141 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-01 20:53:42.141 [Task submitter] INFO  nextflow.Session - [c8/6a4374] Submitted process > parsePercent
-Nov-01 20:53:42.191 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: parsePercent; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/c8/6a4374c85e7f8860bdb9fb962da881]
-Nov-01 20:53:42.193 [main] DEBUG nextflow.Session - Session await > all processes finished
-Nov-01 20:53:42.195 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Nov-01 20:53:42.199 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Nov-01 20:53:42.204 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 10s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Nov-01 20:53:42.272 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Nov-01 20:53:42.314 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Nov-01 20:53:42.314 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 24828@bignik-X550JK [127.0.1.1]
+  CPUs: 8 - Mem: 7.6 GB (2.4 GB) - Swap: 2 GB (1.8 GB)
+Nov-03 00:24:31.411 [main] DEBUG nextflow.Session - Work-dir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work [ext2/ext3]
+Nov-03 00:24:31.411 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/bin
+Nov-03 00:24:31.425 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-03 00:24:31.437 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-03 00:24:31.475 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-03 00:24:31.488 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Nov-03 00:24:31.716 [main] DEBUG nextflow.Session - Session start
+Nov-03 00:24:32.609 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-03 00:24:32.704 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-03 00:24:32.705 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-03 00:24:32.712 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-03 00:24:32.718 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=7.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Nov-03 00:24:32.837 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-03 00:24:32.837 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-03 00:24:32.852 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-03 00:24:32.853 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-03 00:24:32.859 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-03 00:24:32.859 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-03 00:24:32.865 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-03 00:24:32.865 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-03 00:24:32.898 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: samtoolsFlagstat, minimap2, parsePercent, index, FastQC
+Nov-03 00:24:32.899 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Nov-03 00:24:32.899 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > index
+Nov-03 00:24:32.900 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
+Nov-03 00:24:32.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > minimap2
+Nov-03 00:24:32.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > samtoolsFlagstat
+Nov-03 00:24:32.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > parsePercent
+Nov-03 00:24:32.902 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-03 00:24:32.903 [main] DEBUG nextflow.Session - Session await
+Nov-03 00:24:33.136 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-03 00:24:33.139 [Task submitter] INFO  nextflow.Session - [77/27f572] Submitted process > index
+Nov-03 00:24:33.151 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-03 00:24:33.151 [Task submitter] INFO  nextflow.Session - [bc/21489c] Submitted process > FastQC
+Nov-03 00:24:33.492 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: index; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/77/27f572febe4a631e8bb3595353dc7b]
+Nov-03 00:24:33.577 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-03 00:24:33.631 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-03 00:24:33.634 [Task submitter] INFO  nextflow.Session - [19/32710e] Submitted process > minimap2
+Nov-03 00:24:43.507 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FastQC; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/bc/21489c7937d48c99792c3a28919d26]
+Nov-03 00:25:30.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: minimap2; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/19/32710e52911593c6d0e5f7a039a2d4]
+Nov-03 00:25:30.835 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-03 00:25:30.836 [Task submitter] INFO  nextflow.Session - [92/629676] Submitted process > samtoolsFlagstat
+Nov-03 00:25:31.309 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: samtoolsFlagstat; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/92/629676345c09304fad67e365d63287]
+Nov-03 00:25:31.333 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-03 00:25:31.334 [Task submitter] INFO  nextflow.Session - [9d/3a3cb8] Submitted process > parsePercent
+Nov-03 00:25:31.359 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: parsePercent; status: COMPLETED; exit: 0; error: -; workDir: /home/bignik/Documents/GitHub/BioInformatics2022/Part3/work/9d/3a3cb805cef2053d96986fda2f5b87]
+Nov-03 00:25:31.360 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-03 00:25:31.362 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-03 00:25:31.391 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Nov-03 00:25:31.396 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 8s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Nov-03 00:25:31.606 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-03 00:25:31.619 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Nov-03 00:25:31.619 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
